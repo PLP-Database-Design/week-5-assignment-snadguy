@@ -80,17 +80,17 @@ db.connect((err) => {
 		return console.log("Error connectiong to the database: ", err)
 			
 	//connection is sussessfulu
-	console.log("Successfully connected to SQL database: ", db.threadId)
+	console.log("Successfully connected to SQL database. Thread id is", db.threadId)
 })
 
 //sending message to the browser
 app.get(``,(req, res) => {
-		res.send('Hello World!!')
-})
+		res.send('Hello World!! Welcome to our landing')
+		})
 
 //starting the server
 const PORT = 3300
 app.listen(PORT, () => {
   console.log(`Server is runnng successfully on http://localhost: ${PORT}` )
-})
+		})
 
